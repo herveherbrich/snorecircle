@@ -1,0 +1,809 @@
+
+
+<!DOCTYPE html><!--[if IE 8 ]>
+<html lang="en" class="no-js ie8"></html><![endif]-->
+<!--[if IE 9 ]>
+<html lang="en" class="no-js ie9"></html><![endif]-->
+<html class="no-js" lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Snore Circle - Dispositivo anti-ronquidos">
+    <meta name="author" content="createIT">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="assets/images/content/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/content/favicon.png">
+    <title>Snore Circle Europe</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css?v=2">
+    <link rel="stylesheet" href="assets/css/style.css?v=2">
+    <link rel="stylesheet" href="assets/css/snorecircle.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"><!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.min.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <script src="assets/js/es5-shim.min.js"></script><![endif]-->
+    <style>
+      h1, h2,h3,h4,h5,h6 {
+        font-weight: bold;
+      }
+      .btn {
+        font-weight: bold;
+      }
+      @keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0.7; }
+  100% { opacity:1; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0.7; }
+  100% { opacity:1; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0.7; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0.7; }
+  100% { opacity:1; }
+}
+.animate-flicker {
+   -webkit-animation: flickerAnimation 1s infinite;
+   -moz-animation: flickerAnimation 1s infinite;
+   -o-animation: flickerAnimation 1s infinite;
+    animation: flickerAnimation 1s infinite;
+}
+    </style>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function (d, w, c) {
+      (w[c] = w[c] || []).push(function() {
+          try {
+              w.yaCounter46764099 = new Ya.Metrika({
+                  id:46764099,
+                  clickmap:true,
+                  trackLinks:true,
+                  accurateTrackBounce:true,
+                  webvisor:true,
+                  trackHash:true
+              });
+          } catch(e) { }
+      });
+
+      var n = d.getElementsByTagName("script")[0],
+          s = d.createElement("script"),
+          f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+      if (w.opera == "[object Opera]") {
+          d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+  })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/46764099" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+ <!-- Global Site Tag (gtag.js) - Google Analytics -->
+ <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106979614-1"></script>
+ <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments)};
+   gtag('js', new Date());
+ 
+   gtag('config', 'UA-106979614-1');
+ </script>
+ <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+ <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+ <script>
+ window.addEventListener("load", function(){
+ window.cookieconsent.initialise({
+   "palette": {
+     "popup": {
+       "background": "#eaf7f7",
+       "text": "#5c7291"
+     },
+     "button": {
+       "background": "transparent",
+       "text": "#56cbdb",
+       "border": "#56cbdb"
+     }
+   },
+   "position": "bottom-right",
+   "content": {
+     "message": "Utilizamos cookies propias y de terceros para proporcionarle una mejor experiencia de navegación y mostrarle publicidad relacionada con sus preferencias mediante el análisis de sus hábitos de navegación. Al utilizar nuestra página web consideramos que acepta su uso.",
+     "dismiss": "Aceptar",
+     "link": "Más información",
+     "href": "/cookies"
+   }
+ })});
+ </script>
+  </head>
+  <body class="cssAnimate smartwatch navigation-wide">
+    <div class="ct-preloader">
+      <div class="ct-preloader-inner">
+        <div class="ct-preloader-logo"><img src="assets/images/content/drone/distrupt-logo-dark.png" alt="">
+          <h6 class="ct-preloader-title">Espere, cargando...</h6>
+          <div class="loading">
+            <div class="loading-line"></div>
+            <div class="loading-break loading-dot-1"></div>
+            <div class="loading-break loading-dot-2"></div>
+            <div class="loading-break loading-dot-3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="ct-cart">
+      <div class="ct-cart__inner">
+        <div class="ct-cart__button ct-js-cart__button"><i class="fa fa-shopping-cart"></i></div>
+        <div class="ct-cart__message"><i class="fa fa-thumbs-o-up"></i></div>
+        <div class="ct-cart__product"></div>
+      </div>
+    </div> -->
+    <div id="ct-js-wrapper" class="ct-js-wrapper ct-pageWrapper">
+      <!-- Navigation-->
+      <nav data-background="#ffffff" data-height="80" class="navbar navbar-default navbar-fixed navbar-desktop navbar-wide">
+        <div class="navbar-header"><a href="index.html" class="navbar-brand">
+            <div class="inner"><img src="assets/images/content/drone/distrupt-logo-dark.png" alt=""></div></a>
+          <ul class="ct-socials ct-socials--motive list-unstyled list-inline">
+            <li><a href="https://www.facebook.com/SnoreCircleEurope/" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/snorecircleeuro" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="contacto" data-toggle="tooltip" data-placement="bottom" title="Email"><i class="fa fa-envelope"></i></a></li>
+            <!-- <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest"></i></a></li> -->
+          </ul>
+          <div class="ct-contactBox"><a href="tel:+34609066390"><span class="ct-contactBox-top">Llamanos:</span><span class="ct-contactBox-number">+34 609 066 390</span></a></div>
+          <div class="ct-iconBox ct-iconBox--small media ct-contactBox--responsive"><a href="tel:+34609066390">
+              <div class="media-left">
+                <div class="ct-iconBox-icon"><i class="fa fa-phone"></i></div>
+              </div></a></div>
+          <div class="ct-iconBox ct-iconBox--small media"><a href="https://www.google.com/maps/place/Centro+de+Excelencia+Empresarial+de+Coslada/@40.434761,-3.558309,16z/data=!4m5!3m4!1s0x0:0x7391244dcfe8907b!8m2!3d40.434761!4d-3.558309?hl=es-ES">
+              <div class="media-left">
+                <div class="ct-iconBox-icon"><i class="fa fa-map-marker"></i></div>
+              </div>
+              <div class="media-body">
+                <h6 class="ct-iconBox-title">Nuestros <br> almacenes</h6>
+              </div></a></div>
+        </div>
+        <div class="ct-search-link"><!--<a href="#"><i class="fa fa-search"></i></a>--></div>
+        <ul role="menu" class="nav navbar-nav ct-navbar--fadeIn" style="font-weight: bold">
+            <li class="nav-item"><a href="/">Inicio</a></li>
+          <!-- <li class="nav-item dropdown"><a>Home</a> -->
+            <!-- <ul role="menu" class="dropdown-menu">
+              <li class="nav-item"><a href="index3.html">Smartwatch</a></li>
+              <li class="nav-item"><a href="index.html">Drone</a></li>
+              <li class="nav-item"><a href="index5.html">Smartphone</a></li>
+              <li class="nav-item"><a href="index2.html">Beacon</a></li>
+              <li class="nav-item"><a href="index4.html">Vr mask</a></li>
+            </ul> -->
+          <!-- </li> -->
+          <!-- <li class="nav-item"><a href="#product" data-scroll="#product">Product</a></li> -->
+          <!-- <li class="nav-item"><a href="#experience" data-scroll="#features">Experience</a></li> -->
+          <li class="nav-item"><a href="compra-ahora">Compra ahora</a></li>
+          <li class="nav-item dropdown"><a>Saber más</a>
+            <ul role="menu" class="dropdown-menu">
+              <li class="nav-item"><a href="services.html">Más información</a></li>
+              <li class="nav-item"><a href="preguntas-frecuentes">Preguntas frecuentes</a></li>
+              <li class="nav-item"><a href="instrucciones">Instrucciones</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="contacto">Contacto</a></li>
+          <!-- <li class="nav-item"><a href="#order" data-scroll="#order">Order now</a></li> -->
+        </ul>
+      </nav>
+      <section data-parallax="100" data-background="assets/images/content/smartwatch/section-background-8.jpg" data-height="100%" class="ct-u-display-table ct-mediaSection ct-u-padding-top-80 ct-u-padding-top-0-sm">
+        <div class="inner">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-5 col-lg-offset-1 col-md-7 col-md-offset-0 col-sm-8 ct-u-padding-top-50 col-xs-12">
+                <div class="ct-pageHeader ct-pageHeader--type1 text-center-sm">
+                  <h1 class="ct-pageHeader-title">Dispositivo&nbsp;<img src="assets/images/content/smartwatch/disrupt-brand.png" alt=""><br>Antirronquidos<span class="ct-u-colorMotive">Revolucionario</span></h1>
+                  <div class="btn-group btn-group--alignLeft ct-u-margin-top-30">
+                    <a href="compra-ahora" class="btn btn-accient paypal_btn">Compra ahora <s>128€</s> - <span style="font-weight: 900">76,80€</span></a>
+                    <!--<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="btn">
+                      <input type="hidden" name="cmd" value="_xclick"/>
+                      <input type="hidden" name="business" value="office@createit.pl"/>
+                      <input type="hidden" name="lc" value="US"/>
+                      <input type="hidden" name="item_name" value="Item"/>
+                      <input type="hidden" name="item_number" value="1"/>
+                      <input type="hidden" name="amount" value="299.00"/>
+                      <input type="hidden" name="currency_code" value="USD"/>
+                      <input type="hidden" name="button_subtype" value="services"/>
+                      <input type="hidden" name="no_note" value="0"/>
+                      <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest"/>
+                      <input type="submit" value="COMPRAR POR 99€" name="submit" title="PayPal - The safer, easier way to pay online!" class="btn btn-accient paypal_btn"><!--<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>--><a href="#order" data-scroll="#order" class="btn btn-transparent btn--withIcon btn--motiveColor animate-flicker"><span style="font-weight: 900">Cyber Monday -40%</span><i class="fa fa-caret-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-5 col-sm-4 text-right col-xs-4 hidden-xs"><img src="assets/images/content/smartwatch/smartwatch.png" alt="" class="ct-animationFloating--vertical"></div>
+            </div>
+          </div>
+        </div>
+        <div data-scroll="#product" class="ct-nextSection-scroll ct-js-nextSection-scroll animated pulse animation-infinity ct-nextSection-scroll--motive"><i class="fa fa-angle-double-down"></i><span>Continuar</span></div>
+      </section>
+      <section id="product" data-parallax="50" data-background="assets/images/content/smartwatch/section-background-9.jpg" data-background-size="contain" class="ct-u-padding-top-70 ct-u-padding-bottom-50">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3 ct-u-padding-bottom-80">
+              <div class="ct-sectionHeader ct-sectionHeader--typeDarken ct-sectionHeader--subtitleItalic text-center">
+                <h3 class="ct-sectionHeader-title">Producto</h3>
+                <h4 class="ct-sectionHeader-subtitle">Snore Circle es un dispositivo inteligente que utiliza tecnologías de última generación para resolver un problema ancestral, los ronquidos.</h4>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="ct-productPreview">
+              <div class="col-md-5">
+                <div class="ct-productPreview-image text-center"><img src="assets/images/content/smartwatch/smartwach-preview.png" alt=""></div>
+              </div>
+              <div class="col-md-7">
+                <div data-padding-position="left" class="ct-iconBox--stepped ct-u-padding-top-20">
+                  <div class="ct-iconBox ct-iconBox--type2 ct-iconBox--dark" data-left-position="-300px" data-width="280px">
+                    <div class="media-left">
+                      <!-- <div class="ct-iconBox-icon"><i class="fa fa-battery-three-quarters"></i></div> -->
+                      <div class="ct-iconBox-icon"><i class="fa fa-sort"></i></div>
+                    </div>
+                    <div class="media-body">
+                      <h6 class="ct-iconBox-title">Lo más cómodo posible</h6>
+                      <p class="ct-iconBox-description">Tamaño reducido al máximo.</p>
+                    </div><span class="ct-iconBox-decorativeLine ct-u-indentInvisible">Decorative line</span>
+                  </div>
+                  <div class="ct-iconBox ct-iconBox--type2 ct-iconBox--dark" data-padding="110" data-left-position="-140px" data-width="220px">
+                    <div class="media-left">
+                      <div class="ct-iconBox-icon"><i class="fa fa-eye"></i></div>
+                    </div>
+                    <div class="media-body">
+                      <h6 class="ct-iconBox-title">Fácil &amp; y sencillo</h6>
+                      <p class="ct-iconBox-description">Uso fácil e intuitivo</p>
+                    </div><span class="ct-iconBox-decorativeLine ct-u-indentInvisible">Decorative line</span>
+                  </div>
+                  <div class="ct-iconBox ct-iconBox--type2 ct-iconBox--dark" data-padding="210" data-left-position="-100px" data-width="280px">
+                    <div class="media-left">
+                      <div class="ct-iconBox-icon"><i class="fa fa-battery-three-quarters"></i></div>
+                    </div>
+                    <div class="media-body">
+                      <h6 class="ct-iconBox-title">Bateria ultra eficiente</h6>
+                      <p class="ct-iconBox-description">Bateria de larga duración</p>
+                    </div><span class="ct-iconBox-decorativeLine ct-u-indentInvisible">Decorative line</span>
+                  </div>
+                  <div class="ct-iconBox ct-iconBox--type2 ct-iconBox--dark" data-padding="210" data-left-position="-100px" data-width="280px">
+                    <div class="media-left">
+                      <div class="ct-iconBox-icon"><i class="fa fa-shield"></i></div>
+                    </div>
+                    <div class="media-body">
+                      <h6 class="ct-iconBox-title">Los mejores materiales</h6>
+                      <p class="ct-iconBox-description">El dispositivo cuenta con materiales de alta calidad.</p>
+                    </div><span class="ct-iconBox-decorativeLine ct-u-indentInvisible">Decorative line</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="order" class="ct-dividerSection ct-dividerSection--currency ct-dividerSection--motive ct-u-padding-both-70 ct-u-margin-top-70--minus">
+        <div class="inner">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 text-center-lg">
+                <div class="ct-dividerSection--left">
+                  <div class="ct-iconBox ct-iconBox--type3 ct-iconBox--white media">
+                    <div class="media-body">
+                      <h4 class="ct-iconBox-title">Compra ahora con un 40% de descuento</h4>
+                      <p class="ct-iconBox-description">¡Aprovecha la promoción del Cyber Monday!</p>
+                      <a href="compra-ahora" class="btn btn-transparent btn--withIcon btn--motiveColor" style="color: white; border-color: white;">Compra ahora por <strong>76,80€</strong><i class="fa fa-caret-right" sytle="color:white;"></i></a>                      
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="ct-dividerSection--right ct-product">
+                  <form class="ct-addToCart ct-contactForm form-inline ct-contactForm--white"><img src="assets/images/content/drone/gallery-item-drone-10.jpg" alt="" class="hidden ct-product-image">
+                    <div class="ct-product-price hidden">299</div>
+                    <div class="form-group">
+                      <input type="text" placeholder="Piece" value="" required class="form-control input-required-value">
+                      <div class="ct-addToCart-logic"><span class="ct-input-increment"><i class="fa fa-plus-circle"></i></span><span class="ct-input-decrement"><i class="fa fa-minus-circle"></i></span></div>
+                      <input type="hidden" id="required-value" value="0">
+                    </div>
+                    <div class="form-group ct-product-title"><span class="hidden">Item #01</span>
+                      <select>
+                        <option value="Black">Black</option>
+                        <option value="Purple">Purple</option>
+                        <option value="Yellow">Yellow</option>
+                        <option value="Green">Green</option>
+                        <option value="White">White</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" class="btn-group btn-group--separated ct-product-button"><span class="btn btn-dark btn-lg btn-separated">add to cart</span><span class="btn btn-dark btn-lg btn-separated"><i class="fa fa-shopping-cart"></i></span></button>
+                    </div>
+                  </form>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="ct-u-margin-top-20--minus">
+        <div class="container">
+          <div class="row">
+            <div class="ct-productPreview">
+              <div class="col-md-6 ct-u-padding-top-50">
+                <div data-padding-position="right" class="ct-iconBox--stepped ct-u-padding-top-20">
+                  <div class="ct-iconBox ct-iconBox--type2 ct-iconBox-decorativeLine--Left ct-iconBox--dark" data-padding="100" data-right-position="-200px" data-width="250px">
+                    <div class="media-left">
+                      <h6 class="ct-iconBox-title">TIght Construction</h6>
+                      <p class="ct-iconBox-description">Integer a mattis diam at sagittis</p>
+                    </div>
+                    <div class="media-body">
+                      <div class="ct-iconBox-icon"><i class="fa fa-briefcase"></i></div>
+                    </div><span class="ct-iconBox-decorativeLine ct-u-indentInvisible"></span>
+                  </div>
+                  <div class="ct-iconBox ct-iconBox--type2 ct-iconBox-decorativeLine--Left ct-iconBox--dark" data-padding="200" data-right-position="-210px" data-width="360px">
+                    <div class="media-left">
+                      <h6 class="ct-iconBox-title">Hi-tech Sensor</h6>
+                      <p class="ct-iconBox-description">Integer a mattis diam at sagittis</p>
+                    </div>
+                    <div class="media-body">
+                      <div class="ct-iconBox-icon"><i class="fa fa-wifi"></i></div>
+                    </div><span class="ct-iconBox-decorativeLine ct-u-indentInvisible"></span>
+                  </div>
+                  <div class="ct-iconBox ct-iconBox--type2 ct-iconBox-decorativeLine--Left ct-iconBox--dark" data-padding="200" data-right-position="-100px" data-width="250px">
+                    <div class="media-left">
+                      <h6 class="ct-iconBox-title">Skin Friendly Material</h6>
+                      <p class="ct-iconBox-description">Integer a mattis diam at sagittis</p>
+                    </div>
+                    <div class="media-body">
+                      <div class="ct-iconBox-icon"><i class="fa fa-heart-o"></i></div>
+                    </div><span class="ct-iconBox-decorativeLine ct-u-indentInvisible"></span>
+                  </div>
+                  <div class="ct-iconBox ct-iconBox--type2 ct-iconBox-decorativeLine--Left ct-iconBox--dark" data-padding="200" data-right-position="-300px" data-width="450px">
+                    <div class="media-left">
+                      <h6 class="ct-iconBox-title">Exclusive finishing</h6>
+                      <p class="ct-iconBox-description">Integer a mattis diam</p>
+                    </div>
+                    <div class="media-body">
+                      <div class="ct-iconBox-icon"><i class="fa fa-diamond"></i></div>
+                    </div><span class="ct-iconBox-decorativeLine ct-u-indentInvisible"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="ct-productPreview-image text-center"><img src="assets/images/content/smartwatch/smartwach-preview-2.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <section class="ct-u-padding-top-70">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3 ct-u-padding-bottom-30">
+              <div class="ct-sectionHeader ct-sectionHeader--typeDarken ct-sectionHeader--subtitleItalic text-center">
+                <h3 class="ct-sectionHeader-title">Ver video</h3>
+                <h4 class="ct-sectionHeader-subtitle">Este video muestra las características del dispositivo así como su funcionamiento. Vea cómo puede mejorar su vida.</h4>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="ct-mediaBox">
+                <div class="embed-responsive embed-responsive-16by9 ct-embed"><img src="assets/images/content/smartwatch/media-background.png" alt="">
+                  <iframe src="https://www.youtube.com/embed/yvMbKTNRkZw" allowfullscreen style="border:none" class="embed-responsive-item"></iframe>
+                  <div class="ct-mediaBox-poster"><img src="assets/images/content/smartwatch/media-poster.jpg" alt=""><a href="#" class="btn btn--withIcon btn--motiveColor ct-playButton">Ver video<i class="fa fa-caret-right"></i></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="features" data-parallax="50" data-background="assets/images/content/drone/section-background-3.jpg" class="ct-u-padding-top-70 ct-u-padding-bottom-200 ct-sectionOverlay-75">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3 ct-u-padding-bottom-80">
+              <div class="ct-sectionHeader ct-sectionHeader--typeLight ct-sectionHeader--subtitleItalic text-center">
+                <h3 class="ct-sectionHeader-title">Recorrido</h3>
+                <h4 class="ct-sectionHeader-subtitle">En septiembre de 2016 Snore Circle consigue financiación por valor de 284,000$ (614% del objetivo fijado) por <i>crowdfunding</i> en Indigogo. Despues de un intenso periodo de desarrollo ya está a la venta.</h4>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2 col-sm-4 col-xs-6">
+              <div class="ct-iconBox ct-iconBox--type1 ct-iconBox--white">
+                <div class="ct-iconBox-icon"><i class="fa fa-shield"></i></div>
+                <h6 class="ct-iconBox-title">Resistente</h6>
+                <p class="ct-iconBox-description">Para soñadores inquietos</p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+              <div class="ct-iconBox ct-iconBox--type1 ct-iconBox--white">
+                <div class="ct-iconBox-icon"><i class="fa fa-thumbs-o-up"></i></div>
+                <h6 class="ct-iconBox-title">Comodo</h6>
+                <p class="ct-iconBox-description">Para soñadores sensibles</p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+              <div class="ct-iconBox ct-iconBox--type1 ct-iconBox--white">
+                <div class="ct-iconBox-icon"><i class="fa fa-globe"></i></div>
+                <h6 class="ct-iconBox-title">Aplicaciones móvil</h6>
+                <p class="ct-iconBox-description">Para hacer seguimiento</p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+              <div class="ct-iconBox ct-iconBox--type1 ct-iconBox--white">
+                <div class="ct-iconBox-icon"><i class="fa fa-heart-o"></i></div>
+                <h6 class="ct-iconBox-title">E-Salud</h6>
+                <p class="ct-iconBox-description">Para mejorar tu sueño</p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+              <div class="ct-iconBox ct-iconBox--type1 ct-iconBox--white">
+                <div class="ct-iconBox-icon"><i class="fa fa-commenting-o"></i></div>
+                <h6 class="ct-iconBox-title">Notificaciones</h6>
+                <p class="ct-iconBox-description">Para recibir información</p>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+              <div class="ct-iconBox ct-iconBox--type1 ct-iconBox--white">
+                <div class="ct-iconBox-icon"><i class="fa fa-battery-3"></i></div>
+                <h6 class="ct-iconBox-title">Larga duración</h6>
+                <p class="ct-iconBox-description">Para olvidarse del cargador</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <hr class="ct-divider-line ct-u-margin-top-50 ct-u-margin-bottom-100">
+            </div>
+          </div>
+          <!-- <div class="row">
+            <div class="col-sm-12">
+              <div class="ct-testimonials">
+                <div class="ct-testimonials-slider ct-dots--type1 ct-dots--positionBottomOffset">
+                  <div class="item">
+                    <div class="ct-testimonial">
+                      <div class="ct-testimonial-icon"><i class="fa fa-commenting-o"></i></div>
+                      <p class="ct-testimonial-text">Dispositivo genial y muy práctico.</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="ct-testimonial">
+                      <div class="ct-testimonial-icon"><i class="fa fa-commenting"></i></div>
+                      <p class="ct-testimonial-text">Praesent sed ipsum vitae erat volutpat tempor vitae non quam. Nunc ut quam ante. Vestibulum convallis nisi eleifend ultricies tincidunt. Cras ac lectus a erat fermentum commodo. Suspendisse potenti</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="ct-testimonial">
+                      <div class="ct-testimonial-icon"><i class="fa fa-commenting-o"></i></div>
+                      <p class="ct-testimonial-text">Phasellus sit amet ultrices odio. Quisque euismod vehicula lacus et cursus. Quisque fringilla consequat porta. Fusce sodales porttitor.</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="ct-testimonial">
+                      <div class="ct-testimonial-icon"><i class="fa fa-commenting"></i></div>
+                      <p class="ct-testimonial-text">Integer euismod luctus sapien, tempor vehicula est condimentum ac. Morbi eleifend neque eu orci semper volutpat. Pellentesque dolor justo, facilisis in diam gravida, scelerisque mattis velit.</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="ct-testimonial">
+                      <div class="ct-testimonial-icon"><i class="fa fa-commenting-o"></i></div>
+                      <p class="ct-testimonial-text">Nam a diam tincidunt, condimentum nisi et, fringilla lectus. Nullam nec&nbsp;lectus eu erat tempus pulvinar.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ct-testimonials-slider-nav-thumbnails">
+                <div class="item">
+                  <div class="ct-testimonial-thumbnailItem">
+                    <h6 class="ct-testimonial-author">Pau Bosch</h6><span class="ct-testimonial-authorDescription">CTO @ Binary Spirit</span>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="ct-testimonial-thumbnailItem">
+                    <h6 class="ct-testimonial-author">Stan wallis</h6><span class="ct-testimonial-authorDescription">CEO @ SoftySoft</span>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="ct-testimonial-thumbnailItem">
+                    <h6 class="ct-testimonial-author">Jane honda</h6><span class="ct-testimonial-authorDescription">actress</span>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="ct-testimonial-thumbnailItem">
+                    <h6 class="ct-testimonial-author">Ben Gobama</h6><span class="ct-testimonial-authorDescription">Ben Gobama</span>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="ct-testimonial-thumbnailItem">
+                    <h6 class="ct-testimonial-author">Jeffrey Kendrick</h6><span class="ct-testimonial-authorDescription">Manager @ Crisppi</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </section>
+      <!-- <section class="ct-u-padding-top-70 ct-u-padding-bottom-80">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3 ct-u-padding-bottom-50">
+              <div class="ct-sectionHeader ct-sectionHeader--typeDarken ct-sectionHeader--subtitleItalic text-center">
+                <h3 class="ct-sectionHeader-title">Aparición en medios</h3>
+                <h4 class="ct-sectionHeader-subtitle">Nuestro producto ha sido publicado por varias de las más importantes revistas de prensa & tecnología del mundo.</h4>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div data-autoplay="true" data-items-lg="6" data-items-md="4" data-items-sm="3" data-items-xs="2" data-dots="true" class="ct-js-slick ct-dots--type1 ct-dots--positionBottomCenter ct-dots--motive">
+                <div class="item"><a href="#" class="ct-brandBox">
+                    <figure><img src="assets/images/content/smartwatch/brand-item-3.png"/>
+                      <figcaption>Henderson</figcaption>
+                    </figure></a><a href="#" class="ct-brandBox">
+                    <figure><img src="assets/images/content/smartwatch/brand-item-1.png"/>
+                      <figcaption>Hipster</figcaption>
+                    </figure></a>
+                </div>
+                <div class="item"><a href="#" class="ct-brandBox">
+                    <figure><img src="assets/images/content/smartwatch/brand-item-4.png"/>
+                      <figcaption>Sunshine</figcaption>
+                    </figure></a><a href="#" class="ct-brandBox">
+                    <figure><img src="assets/images/content/smartwatch/brand-item-2.png"/>
+                      <figcaption>Walkers</figcaption>
+                    </figure></a>
+                </div>
+                <div class="item"><a href="#" class="ct-brandBox">
+                    <figure><img src="assets/images/content/smartwatch/brand-item-1.png"/>
+                      <figcaption>Hipster</figcaption>
+                    </figure></a><a href="#" class="ct-brandBox">
+                    <figure><img src="assets/images/content/smartwatch/brand-item-3.png"/>
+                      <figcaption>Henderson</figcaption>
+                    </figure></a>
+                </div>
+                <div class="item"><a href="#" class="ct-brandBox">
+                    <figure><img src="assets/images/content/smartwatch/brand-item-2.png"/>
+                      <figcaption>Walkers</figcaption>
+                    </figure></a><a href="#" class="ct-brandBox">
+                    <figure><img src="assets/images/content/smartwatch/brand-item-4.png"/>
+                      <figcaption>Sunshine</figcaption>
+                    </figure></a>
+                </div>
+                <div class="item"><a href="#" class="ct-brandBox">
+                    <figure><img src="assets/images/content/smartwatch/brand-item-3.png"/>
+                      <figcaption>Henderson</figcaption>
+                    </figure></a><a href="#" class="ct-brandBox">
+                    <figure><img src="assets/images/content/smartwatch/brand-item-1.png"/>
+                      <figcaption>Hipster</figcaption>
+                    </figure></a>
+                </div>
+                <div class="item"><a href="#" class="ct-brandBox">
+                    <figure><img src="assets/images/content/smartwatch/brand-item-4.png"/>
+                      <figcaption>Sunshine</figcaption>
+                    </figure></a><a href="#" class="ct-brandBox">
+                    <figure><img src="assets/images/content/smartwatch/brand-item-2.png"/>
+                      <figcaption>Walkers</figcaption>
+                    </figure></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <div class="clearfix"></div>
+      <form action="#" class="ct-searchForm">
+        <div class="inner">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <div class="form-group">
+                  <input id="cf-search-form" type="text" placeholder="Search on this site ..." required class="form-control">
+                  <label for="cf-search-form" class="sr-only">Search on this site ...</label>
+                  <button type="submit" class="ct-search-btn"><i class="fa fa-search"></i></button>
+                </div>
+                <div class="form-group"><a href="#" class="ct-searchForm-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41px" height="41px" viewbox="0 0 41 41">
+                      <path d="M 40.86 39.1C 40.86 39.1 39.77 40.19 39.77 40.19 39.77 40.19 20.83 21.24 20.83 21.24 20.83 21.24 1.88 40.19 1.88 40.19 1.88 40.19 0.8 39.1 0.8 39.1 0.8 39.1 19.74 20.16 19.74 20.16 19.74 20.16 0.81 1.23 0.81 1.23 0.81 1.23 1.9 0.14 1.9 0.14 1.9 0.14 20.83 19.07 20.83 19.07 20.83 19.07 39.76 0.14 39.76 0.14 39.76 0.14 40.84 1.23 40.84 1.23 40.84 1.23 21.92 20.16 21.92 20.16 21.92 20.16 40.86 39.1 40.86 39.1Z" fill="rgb(255,255,255)" opacity="0.50"></path>
+                    </svg></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <ul class="list-unstyled ct-socials--responsive">
+        <li><a href="https://www.facebook.com/SnoreCircleEurope/"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/snorecircleeuro"><i class="fa fa-twitter"></i></a></li>
+      </ul>
+      <!-- Footer-->
+      <footer class="ct-footer">
+        <div class="ct-footer-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="ct-preFooter ct-u-padding-top-30">
+                  <div class="row">
+                    <div class="col-sm-12 col-md-6 text-center-md">
+                      <div class="widget">
+                        <div class="widget-inner">
+                          <ul class="list-unstyled list-inline ct-socials text-center-sm ct-u-padding-top-15">
+                            <li><a href="https://www.facebook.com/SnoreCircleEurope/" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://twitter.com/snorecircleeuro" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="contacto" data-toggle="tooltip" data-placement="bottom" title="Email"><i class="fa fa-envelope"></i></a></li>
+                            <!-- <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Vkontakte"><i class="fa fa-vk"></i></a></li>
+                            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Rss"><i class="fa fa-rss"></i></a></li> -->
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 text-right text-center-md">
+                      <div class="widget">
+                        <div class="widget-inner">
+                          <div role="alert" style="display:none" class="successMessage alert alert-success alert-dismissible">Thank you. Your message has been sent correctly.
+                            <button type="button" data-dismiss="alert" aria-hidden="true" aria-label="Close" class="close">x</button>
+                          </div>
+                          <div role="alert" style="display:none" class="successError alert alert-danger alert-dismissible">Ups! An error occured. Please try again later.
+                            <button type="button" data-dismiss="alert" aria-hidden="true" aria-label="Close" class="close">x  </button>
+                          </div>
+                          <!-- <form action="assets/form/send.php" method="POST" data-email-subject="Newsletter" class="ct-newsletter form-inline validateIt">
+                            <div class="form-group">
+                              <label for="ct-newsletter">Join our newsletter</label><span class="inner">
+                                <input type="email" id="ct-newsletter" placeholder="Email address" name="field[]" required="required" class="form-control"/>
+                                <button type="submit"><i class="fa fa-plus-circle"></i></button></span>
+                            </div>
+                          </form> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <nav class="ct-footer-nav">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="widget">
+                    <div class="widget-inner"><img src="assets/images/content/drone/distrupt-logo-light.png" alt="" class="ct-footer-brand"></div>
+                  </div>
+                </div>
+                <div class="col-sm-8">
+                  <div class="row">
+                    <div class="col-sm-3 col-xs-6">
+                      <div class="widget">
+                        <div class="widget-inner">
+                          <ul class="list-unstyled ct-menu-footer">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="services.html">Services</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                      <div class="widget">
+                        <div class="widget-inner">
+                          <ul class="list-unstyled ct-menu-footer">
+                            <li><a href="faq.html">faq</a></li>
+                            <li><a href="privacy-policy.html">privacy policy</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                      <div class="widget">
+                        <div class="widget-inner">
+                          <ul class="list-unstyled ct-menu-footer">
+                            <li><a href="about-us.html">About us</a></li>
+                            <li><a href="contact-us.html">Contact us</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                      <div class="widget">
+                        <div class="widget-inner">
+                          <ul class="list-unstyled ct-menu-footer">
+                            <li><a href="press-kit.html">Press kit</a></li>
+                            <li><a href="investors.html">Investors</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav> -->
+        </div>
+        <div class="ct-footer-bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <!-- <div class="ct-payments">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <div class="widget">
+                        <div class="widget-inner"><a href="shop-locator.html" class="ct-link ct-link--arrowMotive text-uppercase">Shop locator</a></div>
+                      </div>
+                    </div>
+                    <div class="col-sm-9">
+                      <div class="widget">
+                        <div class="widget-inner">
+                          <div class="ct-payments-icons"><span class="ct-payment-title">Métodos de pago:</span><img src="assets/images/content/drone/payment-icons.png" alt=""></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+                <div class="ct-footer-copyright">
+                  <div class="row">
+                    <div class="col-sm-7"><span class="ct-copyright-text">© Derechos reservados <a href="https://www.snorecircle.es">Snore Cirle</a></span></div>
+                    <div class="col-sm-5">
+                      <ul class="list-inline list-unstyled ct-list-terms">
+                        <li><a href="terminos-condiciones">Terms & Conditions</a></li>
+                        <li><a href="privacidad">Privacy Policy</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Mobile Menu //-->
+    <div class="ct-menu-mobile">
+      <nav class="navbar navbar-dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-4 col-sm-4 hidden-xs">
+              <ul class="list-unstyled list-inline ct-socials--rounded">
+                <li><a href="https://www.facebook.com/SnoreCircleEurope/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/snorecircleeuro"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="contacto"><i class="fa fa-envelope"></i></a></li>
+              </ul>
+            </div>
+            <div class="col-xs-7 col-sm-4">
+              <div class="navbar-header"><a href="index.html" class="navbar-brand"><img src="assets/images/content/beacon/distrupt-logo-light.png" alt=""></a></div>
+            </div>
+            <div class="col-xs-5 col-sm-4">
+              <ul role="menu" class="nav navbar-nav">
+                <li class="ct-productCart-link"><a><i class="fa fa-shopping-cart"></i></a>
+                </li>
+                <li class="nav-item-toggle"><a><i class="fa fa-bars"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="navbar-beacon">
+      <ul class="list-unstyled">
+        <li class="nav-item"><a href="/">Inicio</a></li>
+        <!-- <li class="nav-item"><a href="#product" data-scroll="#product">Product</a></li> -->
+        <li class="nav-item"><a href="compra-ahora">Compra ahora</a></li>
+        <li class="nav-item dropdown"><a href="services.html">Saber más<i class="fa fa-angle-double-down"></i></a>
+          <ul role="menu" class="dropdown-menu">
+            <li class="nav-item"><a href="mas-informacion">Más información</a></li>
+            <li class="nav-item"><a href="preguntas-frecuentes">Preguntas frecuentes</a></li>
+            <li class="nav-item"><a href="instrucciones">Instrucciones</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="contacto">Contacto</a></li>
+      </ul>
+      <ul class="list-unstyled list-inline ct-socials--rounded">
+        <li><a href="https://www.facebook.com/SnoreCircleEurope"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/snorecircleeuro"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="contacto"><i class="fa fa-envelope"></i></a></li>
+      </ul>
+    </div>
+    <!-- JavaScripts-->
+    <script src="assets/js/disrupt.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/form/js/contact-form.js"></script>
+    <!-- Plugins-->
+  </body>
+</html>
